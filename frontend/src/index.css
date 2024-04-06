@@ -1,0 +1,198 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+body{
+  background-color: rgb(241, 245, 241);
+  margin: 0;
+  font-family: "Poppins";
+}
+
+/* navbar start here */
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+nav  .logo a{
+  text-decoration: none;
+  font-weight: 800;
+  color:black;
+  font-size: 30px;
+}
+nav .links a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+nav .links a:hover{
+  border-bottom: 4px solid black;
+  padding: 5px;
+}
+nav a, nav button {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+nav .icons{
+  display: flex;
+  flex-direction: row;
+}
+nav .icons a{
+  margin: 15px;
+}
+.row a{
+  text-decoration: none;
+}
+nav,nav .container{
+  background-color: rgb(224 242 254);;
+}
+nav span{
+  margin-left: 5px;
+}
+nav .logout{
+  font-weight: 500;
+  color: black;
+  border: 0;
+  padding: 8px;
+  cursor: pointer;
+}
+nav .auth .signup{
+  font-weight: 800;
+  color: black;
+  padding: 10px;
+}
+nav .auth .login{
+  font-weight: 800;
+  color: black;
+  padding: 10px;
+}
+
+/* navbar end here */
+
+
+
+/* form */
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 4px;
+}
+form.signup h3, form.login h3{
+  font-weight: 700;
+}
+form input {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+form button {
+  background-color: rgb(51 65 85);
+  border: 0;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+form button:disabled{
+  opacity: 50;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+form span a{
+  text-decoration: none;
+}
+/* home start here */
+
+/* home end here */
+
+
+/* section start here */
+.section{
+    text-align: center;
+    padding: 100px;
+}
+.section h1{
+    font-weight: 800;
+    color: rgb(17, 99, 99);
+}
+.section p{
+    font-size: 20px;
+}
+.section button{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    font-weight: 500;
+    border-radius: 25px;
+}
+.section button a{
+    color: black;
+    text-decoration: none;
+}
+
+/* section end here */
+
+/* cards start here  */
+.card:hover{
+    width: 25rem;
+}
+
+/* user strat here */
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+.user form{
+  width: 300px;
+}
+
+/* user end here */
+
+/* footer start here */
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+footer p{
+  color: white;
+  font-weight: 700;
+  display: flex;
+}
+/* footer end here */
