@@ -12,10 +12,10 @@ const google = async (req, res) => {
 
         if (existingUser) {
             // User with the same email already exists
-            const { email, username, avatar } = existingUser;
+            const { email, username, avtare } = existingUser;
             const token = createToken(existingUser._id);
 
-            res.status(200).json({ email, username, token, avatar });
+            res.status(200).json({ email, username, token, avtare });
         } else {
             // User does not exist, proceed with creating a new user
             const generatedPassword =
@@ -29,14 +29,14 @@ const google = async (req, res) => {
                 username: (req.body.name ? req.body.name.split(' ').join('').toLowerCase() : '') + Math.random().toString(36).slice(-4),
                 email: req.body.email,
                 password: hashedPassword,
-                avatar: req.body.photo
+                avtare: req.body.photo
             });
 
             await newUser.save();
 
             const token = createToken(newUser._id);
 
-            res.status(200).json({ email: newUser.email, username: newUser.username, token, avatar: newUser.avatar });
+            res.status(200).json({ email: newUser.email, username: newUser.username, token, avtare: newUser.avtare });
         }
     } catch (error) {
         console.error('Error during Google authentication:', error);
