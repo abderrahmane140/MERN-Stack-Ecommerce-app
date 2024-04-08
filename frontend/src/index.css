@@ -1,5 +1,5 @@
 /* google font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap'); */
 
 
 @tailwind base;
@@ -15,7 +15,6 @@
 body{
   background-color: rgb(241, 245, 241);
   margin: 0;
-  font-family: "Poppins";
 }
 
 /* navbar start here */
@@ -112,7 +111,6 @@ form button {
   margin-top: 10px;
   width: 100%;
   padding: 10px;
-  font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
   color: white;
