@@ -5,9 +5,8 @@ import env from "react-dotenv";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const api_key=process.env.REACT_APP_FIREBASE_KEY
 const firebaseConfig = {
-    apiKey:api_key,
+    apiKey:process.env.REACT_APP_FIREBASE_KEY,
     authDomain: "ecommerce-7e337.firebaseapp.com",
     projectId: "ecommerce-7e337",
     storageBucket: "ecommerce-7e337.appspot.com",
